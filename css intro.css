@@ -1,0 +1,12 @@
+/*global css */
+*{font-size:30px;
+font-weight:500;}
+/*extrnal css*/
+h3{color:plum}
+/*element selector*/
+h4{color:peru}
+/*class selector*/
+.myclass{color:red}
+/* id selector*/
+#myid{color:orchid}
+/* group selector*/

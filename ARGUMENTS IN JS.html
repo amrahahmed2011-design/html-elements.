@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>ARGUMENTS ON JAVASCRIPT</title>
+    </head>
+    <body>
+        <p>FINDING THE LARGEST NUMBER WITH THE HELP OF ARGUMENTS</p>
+        <p id="demo"></p>
+        <script>
+            function findmax(){ var i;
+                var max =0;
+                for(i=0; i < arguments.length; i++){
+            if(arguments[i] > max){ max = arguments[i];}
+            }
+            return max;
+            }
+           document.getElementById("demo").innerHTML= findMax(2983,8934,7624,203);
+        </script>
+    </body>
+</html>

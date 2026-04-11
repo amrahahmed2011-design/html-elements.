@@ -3,7 +3,7 @@
     <title>"JavaScript Math Object Homework"</title>
 </head>
 <body>
-    <p>Finding the largest number with help of Argument Objects</p>
+    <p>"PRINTING NUMBERS USING ARGUMENTS"</p>
 <p id="result"></p>
 <script>
     var value = Math.acos(.53462);
@@ -18,17 +18,16 @@
     document.write("Demo3 Test Value : " + value
     + "<br>");
 
-    function print() {
+    function sum() {
     var i;
-    var print = 0;
+    var sum = 0;
     for(i = 0; i < arguments.length; i++) {
-    if (arguments[i] > print ) {
-    print = arguments[i];
+     sum +=arguments[i]  
+    
     }
+    return sum;
     }
-    return print;
-    }
-    document.getElementById("result").innerHTML = print("value");
+    document.getElementById("result").innerHTML = sumAll ("3672,8926,9282,92643,928.2,927534");
     </script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>"REAL TIME FORM VALIDATION"</title>
+
+    </head>
+        <style>
+            body{
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                text-align:center;
+                margin:0;
+                padding:0;
+            }
+            h1{
+                margin:30px  20px;
+                font-size:40;
+                font-weight:bold;
+                font-color:aqua;
+            }
+            hr{
+                width:80%;
+                border:none;
+                border-top:2px solid black;
+                margin-bottom:30px;
+            }
+            .box{
+                padding:20;
+                margin:auto;
+                width:450px;
+                border: 3px solid black;
+            }
+              .row{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                gap:10px;
+                margin:15px 0;
+              }
+              label{
+                width:20px;
+                text-align:center;
+                font-size:20px;
+              }
+              input{
+                height:25px;
+                padding:9px;
+                border:2px slid black;
+              }
+              #email,#password{width:150px;}
+              #age{width:70px;}
+
+              button{
+                margin-top:55px;
+                padding:4px 14px;
+                cursor:pointer;
+              }
+           #message{
+            margin-top:22px;
+            font-size:50;
+                font-weight:100px;
+              }
+
+        </style>
+        <body>
+            <h1>REAL TIME FORM VALIDATION</h1>
+            <hr>
+            <div class="box"
+            <form id="loginform">
+            <div class="row"></div>
+            <label>EMAIL: </label>
+        <input type="text" id="email" placeholder="myname@gmail.com">
+    
+        </div>
+        <div class="row">
+        <label>AGE: </label>
+  <input type="number" id="age">
+  </div>
+  <button type="submit">LOGIN</button>
+</form>
+<p id="mesage"></p>
+<script src="script.js"></script>
+    </body>
+</html>

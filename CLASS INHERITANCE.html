@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h1>"CLASS INHERITANCE"</h1>
+        <p id="details"></p>
+        <script>
+class car{
+    constructor(brand){
+        this.carname = brand;
+    }
+    present() {
+        return"I HAVE A" + this.carname;
+    }
+}
+class Model extends car {
+    constructor(brand,mod){
+        super(brand);
+        this.Mod = mod;
+    }
+
+
+show() {
+    return this.present() + "  IT IS A " + this.Mod;
+}
+}
+let mycar = new Model("BMW","M5")
+document.getElementById("details").innerHTML= mycar.show();
+        </script>
+    </body>
+</html>

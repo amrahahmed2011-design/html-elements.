@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>EVALUATE VARIABLES</title>
+        
+    </head>
+
+    <body>
+
+<button onclick="myfunction()">TRY IT!!!!</button>
+
+<p id="result"></p>
+
+<script>
+
+    function myfunction() { 
+        var x = 356;
+        var y = 5423;
+
+var a = eval("x + y") + "<br>";
+var b = eval("5 * 5") + "<br>";
+var c = eval("y - x") + "<br>";
+
+var res = a + b + c;
+
+document.getElementById("result").innerHTML = res;
+
+    }
+</script>
+    </body>
+</html>

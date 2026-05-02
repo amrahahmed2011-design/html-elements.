@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JS ARRAY SORT</title>
+    </head>
+    <body>
+        <h1>JS ARRAY SORT</h1>
+        <p>CLICK THE BUTTON TO SORT THE ARRAY IN ASCENDING ORDER</p>
+        <button onclick="ascending()">ASCENDING ORDER</button>
+        <button onclick="decending()">DECENDING ORDER</button>
+        <p id="result"></p>
+        
+        <script>
+                 var points = [256,5634,45,9,67,243,87,316,987,4536,9871,985]
+                 document.getElementById("result").innerHTML = points;
+
+                 function ascending(){
+                    points.sort(function(a,b){return a-b;});
+                    document.getElementById("result").innerHTML = points;
+                 }
+
+                 function decending(){
+                    points.sort(function(a,b){return b-a;});
+                    document.getElementById("result").innerHTML = points;
+                 }
+        </script>
+    </body>
+</html>

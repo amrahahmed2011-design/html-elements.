@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>MAP IN ARRAY</title>
+    </head>
+    <body>
+        <p>MULTIPLY EVERY ELEMENT IN ARRAY BY 50</p>
+        <p id="product_value"></p>
+        <script>
+            var numbers = [35,9,67,3,65,4,8];
+function myFunction(num) {
+    return num * 50
+}
+var newarray = numbers.map(myFunction);
+document.getElementById("product_value").innerHTML = newarray;
+        </script>
+    </body>
+</html>

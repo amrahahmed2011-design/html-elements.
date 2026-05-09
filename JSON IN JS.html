@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>"JSON IN JS"</title>
+    </head>
+    <body>
+        <h1>"JSON IN JS"</h1>
+        <p id = "result"></p>
+        <script>
+            var myobj = { name:"AMRAH", grade: "9" ,age:"15"};
+            var myJSON = JSON.stringify(myobj);
+            var newobj = JSON.parse(myJSON);
+             document.getElementById("result").innerHTML = newobj.name; 
+        </script>
+    </body>
+</html>

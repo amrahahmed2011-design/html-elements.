@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>"PROMISES IN JS"</h1>
+        <p id = "demo"></p>
+        <script>
+            function mydisplayer(some){
+                document.getElementById("demo").innerHTML = some;
+            }
+
+            function sum (a,b) {
+           var sum = a+b;
+           mydisplayer (sum);    
+            }
+            let mypromise =  new Promise (function(myResolve,myReject){
+            let x = 5;
+            if (x == 0) { 
+                myResolve ("OK")
+            }
+            else { myReject ("ERROR")} 
+            });
+            mypromise.then (
+                function(value) {sum ( 350 , 290); },
+                function(error) {sum(error);}
+            );
+        </script>
+    </body>
+</html>
